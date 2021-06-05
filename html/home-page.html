@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home-page-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+    <title>Home</title>
+    <script src = "../jquery-3.5.1.js" defer></script>
+    <script src = "../script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="../assets/Kenshin Impact Logo White.png" class="header-logo">
+        <nav>
+            <div class="nav-item"><a href="#">HOME</a></div>
+            <div class="nav-item"><a href="character-page.html">CHARACTERS</a></div>
+            <div class="nav-item"><a href="#">ABOUT</a></div>
+            <div class="nav-item"><a href="#">GALLERY</a></div>
+            <div class="nav-item"><a href="#">REGISTER</a></div>
+
+            <!-- HAMNAV SEGMENT -->
+            <div class="hamnav-closed-logo">&#8801;</div>
+            
+            <input type="checkbox" name="" id="hamnav-toggle">
+            <div class="hamnav">
+                <div class="hamnav-item"><a href="#">HOME</a></div>
+                <div class="hamnav-item"><a href="character-page.html">CHARACTERS</a></div>
+                <div class="hamnav-item"><a href="#">ABOUT</a></div>
+                <div class="hamnav-item"><a href="#">GALLERY</a></div>
+                <div class="hamnav-item"><a href="#">REGISTER</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="first-content">
+            <div class="first-sub-content">
+                <i class="fa fa-angle-left" id="left-arrow"></i>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="image"><img src="../assets/image-1.jpg"></div>
+                        <div class="image"><img src="../assets/image-2.jpg"></div>
+                        <div class="image"><img src="../assets/image-3.jpg"></div>
+                    </div>
+                </div>
+                <i class="fa fa-angle-right" id="right-arrow"></i>
+                <a id="trailer" href="https://www.youtube.com/watch?v=HLUY1nICQRY">
+                    <i class="fa fa-play"></i>
+                    <div>
+                        WATCH TRAILER
+                    </div>
+                </a>
+            </div>
+            <div class="slider-dot">
+                <div class="slider-icon">•</div>
+                <div class="slider-icon">•</div>
+                <div class="slider-icon">•</div>
+            </div>
+        </div>
+
+        <div class="second-content">
+            <div class="second-sub-content">
+                <a class="gallery" href="home-page.html">
+                    <div class="blur"></div>
+                    <div>GALLERY</div>
+                </a>
+                <a class="about" href="home-page.html">
+                    <div class="blur"></div>
+                    <div>ABOUT</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="third-content">
+            <a class="register" href="#">
+                <div>
+                    <div class="blur"></div>
+                    <div>REGISTER NOW</div>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-images">
+            <div class="footer-logo">
+                <img src="../assets/Kenshin Impact Logo White.png" alt="">
+            </div>
+            <div class="links">
+                <a href="https://twitter.com/GenshinImpact?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/c/genshinimpact"><i class="fa fa-youtube" target="_blank"></i></a>
+                <a href="https://www.instagram.com/genshinimpact/?hl=en"><i class="fa fa-instagram" target="_blank"></i></a>
+                <a href="https://www.facebook.com/GenshinImpact.id/"><i class="fa fa-facebook" target="_blank"></i></a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Copyright © 2021 miHoYoman all Rights Reserved
+        </div>
+    </footer>
+</body>
