@@ -49,7 +49,7 @@ nav > div{
     display: flex;
     align-items: center;
     width: 5vw;
-    height: 5vw;
+    height: 7vw;
     right: 0;
 }
 
@@ -68,8 +68,10 @@ nav > div > button{
 }
 
 .hamnav{
+    padding-top: 1vw;
     width: 40vw;
-    transform: translate(-95%, 70%);
+    top: 7vw;
+    right: 50%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -78,15 +80,21 @@ nav > div > button{
     background-color: white;
     border-radius: 2.5%;
     visibility: hidden;
+    z-index: 500;
 }
 
 .hamnav-item{
-    color: white;
+    color: black;
     font-size: 3vw;
     z-index: -100;
     text-align: center;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
+}
+
+.hamnav-item > a{
+    display: block;
+    color: black;
 }
 
 .hamnav > hr{
