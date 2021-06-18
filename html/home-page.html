@@ -7,40 +7,37 @@
     <link rel="stylesheet" href="../css/home-page-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
     <title>Home</title>
-    <script src = "../jquery-3.5.1.js" defer></script>
-    <script src = "../script.js" defer></script>
+    <script src = "../script/jquery-3.5.1.js" defer></script>
+    <script src = "../script/home.js" defer></script>
 </head>
 <body>
     <header>
         <img src="../assets/Kenshin Impact Logo White.png" class="header-logo">
         <nav>
-            <div class="nav-item"><a href="#">HOME</a></div>
-            <div class="nav-item"><a href="character-page.html">CHARACTERS</a></div>
-            <div class="nav-item"><a href="#">ABOUT</a></div>
-            <div class="nav-item"><a href="#">GALLERY</a></div>
-            <div class="nav-item"><a href="#">REGISTER</a></div>
-
-            <!-- HAMNAV SEGMENT -->
-            <div class="hamnav-closed-logo">&#8801;</div>
-            
-            <input type="checkbox" name="" id="hamnav-toggle">
-            <div class="hamnav">
-                <div class="hamnav-item"><a href="#">HOME</a></div>
-                <div class="hamnav-item"><a href="character-page.html">CHARACTERS</a></div>
-                <div class="hamnav-item"><a href="#">ABOUT</a></div>
-                <div class="hamnav-item"><a href="#">GALLERY</a></div>
-                <div class="hamnav-item"><a href="#">REGISTER</a></div>
+            <div>
+                <button>&#8801;</button>
+                <div class="hamnav">
+                    <div class="hamnav-item"><a href="#">HOME</a></div>
+                    <hr>
+                    <div class="hamnav-item"><a href="character-page.html">CHARACTERS</a></div>
+                    <hr>
+                    <div class="hamnav-item"><a href="#">ABOUT</a></div>
+                    <hr>
+                    <div class="hamnav-item"><a href="#">GALLERY</a></div>
+                    <hr>   
+                    <div class="hamnav-item"><a href="#">REGISTER</a></div>
+                </div>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="first-content">
-            <div class="first-sub-content">
+        <div class="first-container">
+            <div class="first-content">
                 <i class="fa fa-angle-left" id="left-arrow"></i>
-                <div class="slider">
-                    <div class="slides">
-                        <div class="image">
+                <div class="slider-outer">
+                    <div class="slider-inner">
+                        <div class="slider-item">
                             <img src="../assets/image-1.jpg">
                             <div>
                                 <div>
@@ -50,7 +47,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="image">
+                        <div class="slider-item">
                             <img src="../assets/image-2.jpg">
                             <div>
                                 <div>
@@ -60,7 +57,7 @@
                                 </div> 
                             </div>
                         </div>
-                        <div class="image">
+                        <div class="slider-item">
                             <img src="../assets/image-3.jpg">
                             <div>
                                 <div>
@@ -80,21 +77,21 @@
                     </div>
                 </a>
             </div>
-            <div class="slider-dot">
+            <div class="slider-icon-container">
                 <div class="slider-icon">•</div>
                 <div class="slider-icon">•</div>
                 <div class="slider-icon">•</div>
             </div>
         </div>
 
-        <div class="second-content">
-            <a class="second-sub-content" href="home-page.html">
+        <div class="second-container">
+            <a class="second-content" href="home-page.html">
                 <div>
                     <img src="../assets/image-7.jpg">
                     <div>GALLERY</div>
                 </div>
             </a>
-            <a class="second-sub-content" href="home-page.html">
+            <a class="second-content" href="home-page.html">
                 <div>
                     <img src="../assets/image-8.jpg">
                     <div>ABOUT</div>
@@ -102,9 +99,9 @@
             </a>
         </div>
         
-        <div class="third-content">
+        <div class="third-container">
             <div>
-                <img src="../assets/image-6.jpg">
+                <img src="../assets/image-11.jpg">
                 <a class="register" href="home-page.html">
                     REGISTER NOW
                 </a>
