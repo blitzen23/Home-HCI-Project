@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    height: 100vh;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+}
+
+.header-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+}
+
+.header-logo{
+    width: 10vw;
+    margin-left: 4vw;
+}
+
+.hamnav-logo{
+    font-size: 5vw;
+    right: 5vw;
+    margin-right: 4vw;
+    color: white;
+    width: auto;
+    cursor: context-menu;
+}
+
+#hamnav-toggle{
+    opacity: 0;
+    position: absolute;
+    width: 4.5vw;
+    height: 5vw;
+    z-index: 10;
+    top: 1vw;
+    right: 3vw;
+    color: white;
+}
+
+@keyframes slide-down-nav{
+    0%{
+        transform: translateY(-150%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+nav{
+    display: none;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    z-index: 5;
+    animation: slide-down-nav 0.5s both;
+}
+
+.hamnav-item{
+    margin: 1.5vw 0;
+}
+
+nav hr{
+    width: 100%;
+    background-color: gray;
+    border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hamnav-item a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.2vw;
+}
+
+@media screen and (min-width: 1025px){
+    .dropdown-nav:hover nav{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #hamnav-toggle:checked + nav{
+        display: flex;
+    }
+}
