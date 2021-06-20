@@ -5,30 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/home-page-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/header-style.css">
+    <link rel="stylesheet" href="../css/footer-style.css">    
     <title>Home</title>
     <script src = "../script/jquery-3.5.1.js" defer></script>
     <script src = "../script/home.js" defer></script>
+    <script src = "../script/header-script.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="../Asset/Kenshin Impact Logo White.png" class="header-logo">
-        <nav>
-            <div>
-                <button>&#8801;</button>
-                <div class="hamnav">
-                    <div class="hamnav-item"><a href="#">HOME</a></div>
-                    <hr>
-                    <div class="hamnav-item"><a href="character-page.html">CHARACTERS</a></div>
-                    <hr>
-                    <div class="hamnav-item"><a href="#">ABOUT</a></div>
-                    <hr>
-                    <div class="hamnav-item"><a href="#">GALLERY</a></div>
-                    <hr>   
-                    <div class="hamnav-item"><a href="#">REGISTER</a></div>
-                </div>
-            </div>
-        </nav>
+        <div class="header-items">
+            <img src="../Asset/Home/Kenshin Impact Logo White.png" class="header-logo">
+            <div class="hamnav-logo">&#8801;</div>
+        </div>
+        <div class="dropdown-nav">
+            <input type="checkbox" name="" id="hamnav-toggle">
+            <nav>
+                <div class="hamnav-item"><a href="#">HOME</a></div>
+                <hr>
+                <div class="hamnav-item"><a href="character-page.html">CHARACTERS</a></div>
+                <hr>
+                <div class="hamnav-item"><a href="#">ABOUT</a></div>
+                <hr>
+                <div class="hamnav-item"><a href="#">GALLERY</a></div>
+                <hr>   
+                <div class="hamnav-item"><a href="#">REGISTER</a></div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -38,7 +42,7 @@
                 <div class="slider-outer">
                     <div class="slider-inner">
                         <div class="slider-item">
-                            <img src="../Asset/image-1.jpg">
+                            <img src="../Asset/Home/image-1.jpg">
                             <div>
                                 <div>
                                     <div>
@@ -48,21 +52,41 @@
                             </div>
                         </div>
                         <div class="slider-item">
-                            <img src="../Asset/image-2.jpg">
+                            <img src="../Asset/Home/image-2.jpg">
                             <div>
                                 <div>
                                     <div>
-                                        KENSHIN IMPACT IS AN ONLINE OPEN-WORLD ACTION ROLE-PLAYING GAME
+                                        KESNHIN IMPACT IS A FREE-TO-DOWNLOAD ACTION RPG
                                     </div>
                                 </div> 
                             </div>
                         </div>
                         <div class="slider-item">
-                            <img src="../Asset/image-3.jpg">
+                            <img src="../Asset/Home/image-3.jpg">
                             <div>
                                 <div>
                                     <div>
                                         KENSHIN IMPACT CAN BE PLAYED ON ANDROID, IOS, MICROSOFT WINDOWS, PLAYSTATION 4, PLAYSTATION 5, AND NINTENDO SWITCH
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="../Asset/Home/image-4.jpg">
+                            <div>
+                                <div>
+                                    <div>
+                                       KENSHIN IMPACT IS DEVELOPED AND PUBLISHED BY MIHOYO
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <img src="../Asset/Home/image-5.jpg">
+                            <div>
+                                <div>
+                                    <div>
+                                        THERE ARE SOME FEATURES IN KENSHIN IMPACT, THAT ARE A LARGE OPEN-WORLD ENVIRONMENT AND ACTION-BASED BATTLE SYSTEM
                                     </div>
                                 </div> 
                             </div>
@@ -81,19 +105,21 @@
                 <div class="slider-icon">•</div>
                 <div class="slider-icon">•</div>
                 <div class="slider-icon">•</div>
+                <div class="slider-icon">•</div>
+                <div class="slider-icon">•</div>
             </div>
         </div>
 
         <div class="second-container">
             <a class="second-content" href="home-page.html">
                 <div>
-                    <img src="../Asset/image-7.jpg">
+                    <img src="../Asset/Home/image-7.jpg">
                     <div>GALLERY</div>
                 </div>
             </a>
             <a class="second-content" href="home-page.html">
                 <div>
-                    <img src="../Asset/image-8.jpg">
+                    <img src="../Asset/Home/image-8.jpg">
                     <div>ABOUT</div>
                 </div>
             </a>
@@ -101,7 +127,7 @@
         
         <div class="third-container">
             <div>
-                <img src="../Asset/image-11.jpg">
+                <img src="../Asset/Home/image-11.jpg">
                 <a class="register" href="home-page.html">
                     REGISTER NOW
                 </a>
@@ -112,7 +138,7 @@
     <footer>
         <div class="footer-images">
             <div class="footer-logo">
-                <img src="../Asset/Kenshin Impact Logo White.png" alt="">
+                <img src="../Asset/Home/Kenshin Impact Logo White.png" alt="">
             </div>
             <div class="links">
                 <a href="https://twitter.com/GenshinImpact?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fa fa-twitter"></i></a>
