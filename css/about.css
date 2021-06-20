@@ -131,7 +131,7 @@ nav{
 }
 
 .features{
-    height: 158vw;
+    height: 180vw;
     align-items: center;
 }
 
@@ -159,7 +159,7 @@ nav{
     display: block;
     text-align: center;
     width: fit-content;
-    margin-bottom: 3.5vw;
+    margin-bottom: 7.5vw;
     margin-left: auto;
     margin-right: auto;
     font-size: 0vw;
@@ -243,7 +243,7 @@ nav{
 }
 
 .platform{
-    height: 25vw;
+    height: 28vw;
     align-items: center;
 }
 
@@ -274,6 +274,11 @@ nav{
     width: auto;
     padding-right: 2vw;
     padding-left: 2vw;
+    transition: transform 0.5s;
+}
+
+.col2:hover{
+    transform: translateY(0.8vw);
 }
 
 footer{
@@ -358,7 +363,7 @@ footer{
     }
 
     .features{
-        height: 196vw;
+        height: 215vw;
         align-items: center;
     }
 
@@ -386,7 +391,7 @@ footer{
         display: block;
         text-align: center;
         width: fit-content;
-        margin-bottom: 5vw;
+        margin-bottom: 10vw;
         margin-left: auto;
         margin-right: auto;
         font-size: 0vw;
@@ -466,7 +471,7 @@ footer{
     }
 
     .platform{
-        height: 28vw;
+        height: 30vw;
         align-items: center;
     }
 

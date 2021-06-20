@@ -198,12 +198,12 @@ nav{
     background-color: rgba(0, 0, 0, 1);
     height: 27vw;
     width: 45vw;
-    opacity: 0%;
+    opacity: 18%;
     transition: 0.5s;
 }
 
 .bg-black2:hover{
-    opacity: 35%;
+    opacity: 0%;
 }
 
 footer{
@@ -310,5 +310,17 @@ footer{
         margin-bottom: 6vw;
         vertical-align: text-top;
         transition: transform 0.5s;
+    }
+
+    .bg-black2{
+        background-color: rgba(0, 0, 0, 1);
+        height: 52vw;
+        width: 87vw;
+        opacity: 18%;
+        transition: 0.5s;
+    }
+
+    .bg-black2:hover{
+        opacity: 0%;
     }
 }
