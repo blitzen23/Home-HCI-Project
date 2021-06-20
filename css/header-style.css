@@ -54,7 +54,7 @@ nav{
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 1);
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -70,7 +70,7 @@ nav{
 nav hr{
     width: 100%;
     background-color: gray;
-    border: 0.1px solid rgba(0, 0, 0, 0.2);
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
 }
 
 .hamnav-item a{
@@ -89,4 +89,8 @@ nav hr{
     #hamnav-toggle:checked + nav{
         display: flex;
     }
+}
+
+.hamnav-item a:hover{
+    text-shadow: 2px 2px 5px white;
 }
