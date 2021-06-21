@@ -52,58 +52,63 @@ header{
     color: white;
 }
 
-@keyframes slide-down-nav{
-    0%{
-        transform: translateY(-150%);
-    }
-
-    100%{
-        transform: translateY(0%);
-    }
-}
-
 nav{
-    display: none;
+    visibility: hidden;
+    z-index: -100;
+    display: flex;
     position: absolute;
-    align-items: center;
     flex-direction: column;
-    justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    z-index: 5;
-    animation: slide-down-nav 0.5s both;
+    transform: translateY(-150%);
+    transition: all 0.5s;
 }
 
-.hamnav-item{
-    margin: 1.5vw 0;
-}
-
-nav hr{
+nav a{
+    padding: 1.5vw 0;
+    height: 100%;
     width: 100%;
-    background-color: gray;
-    border: 0.1px solid rgba(0, 0, 0, 0.2);
-}
-
-.hamnav-item a{
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 1px 0;
+    text-align: center;
     text-decoration: none;
-    color: white;
+    color: lightgray;
     font-size: 2.2vw;
 }
 
-.hamnav-item a:visited{
-	background-color: white;
+nav a:hover{
+    background-image: linear-gradient(to right, rgba(0 , 0, 0, 0.0) ,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+nav a:first-child{
+    border-width: 0px 0px 1px 0px;
+}
+
+nav a:last-child{
+    border-width: 1px 0px 0px 0px;
+}
+
+.nav-item-active{
+    color: white;
+    text-shadow: 0 0 2px white;
+    background-image: linear-gradient(to right, rgba(0 , 0, 0, 0) ,rgba(0, 0, 0, 0.75), , rgba(255, 0, 0, 0));
+
 }
 
 @media screen and (min-width: 1025px){
     .dropdown-nav:hover nav{
-        display: flex;
+        visibility: visible;
+        transform: translateY(0%);
+        z-index: 5;
     }
 }
 
 @media screen and (max-width: 1024px){
     #hamnav-toggle:checked + nav{
-        display: flex;
+        visibility: visible;
+        transform: translateY(0%);
+        z-index: 5;
     }
 }
