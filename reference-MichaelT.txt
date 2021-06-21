@@ -5,3 +5,6 @@ Photoshop:
 - https://www.pngwing.com/en/free-png-xlcwx
 - https://www.pngwing.com/en/free-png-hurvd
 - https://www.iconninja.com/menu-three-horizontal-parallel-lines-ios-interface-symbol-icon-608288
+
+Website:
+- https://stackoverflow.com/questions/1776915/center-an-element-with-absolute-position-and-undefined-width-in-css
