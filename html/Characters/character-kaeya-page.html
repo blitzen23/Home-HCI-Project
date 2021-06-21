@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/single-character-styles.css">
+    <link rel="stylesheet" href="../../css/single-character-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../../css/header-style.css">
+    <link rel="stylesheet" href="../../css/footer-style.css">    
+
+    <script src = "../../script/jquery-3.5.1.js" defer></script>
+    <script src = "../../script/header-script.js" defer></script>
+
     <title>Kaeya</title>
 </head>
     <body>
 
     <!-- HEADER -->
     <header>
-        <img src="../../Asset/Kenshin Impact Logo White.png" class="header-logo">
-        <nav>
-            <!-- NORMAL NAV SEGMENT -->
-            <div class="nav-item"><a href="#" class="home-nav">HOME</a></div>
-            <div class="nav-item"><a href="../character-page.html" class="character-nav">CHARACTERS</a></div>
-            <div class="nav-item"><a href="#" class="about-nav">ABOUT</a></div>
-            <div class="nav-item"><a href="#" class="gallery-nav">GALLERY</a></div>
-            <div class="nav-item"><a href="../register-page.html" class="register-nav">REGISTER</a></div>
-            
-            <!-- HAMNAV SEGMENT -->
-            <div class="hamnav-closed-logo">&#8801;</div>
-            
+        <div class="header-items">
+            <a href="../../home-page.html">
+                <img src="../Asset/Kenshin Impact Logo White.png" class="header-logo">
+            </a>
+            <div class="hamnav-logo">&#8801;</div>
+        </div>
+        <div class="dropdown-nav">
             <input type="checkbox" name="" id="hamnav-toggle">
-            <div class="hamnav">
-                <div class="hamnav-item"><a href="#">HOME</a></div>
-                <div class="hamnav-item"><a href="../character-page.html">CHARACTERS</a></div>
-                <div class="hamnav-item"><a href="#">ABOUT</a></div>
-                <div class="hamnav-item"><a href="#">GALLERY</a></div>
-                <div class="hamnav-item"><a href="../register-page.html">REGISTER</a></div>
-            </div>
-        </nav>
+            <nav>
+                <a href="../home-page.html" class="nav-item">HOME</a>
+                <a href="../character-page.html" class="nav-item-active">CHARACTERS</a>
+                <a href="../about-page.html" class="nav-item">ABOUT</a>
+                <a href="../gallery-page.html" class="nav-item">GALLERY</a>
+                <a href="../register-page.html" class="nav-item">REGISTER</a>
+            </nav>
+        </div>
     </header>
 
     <!-- MAIN -->

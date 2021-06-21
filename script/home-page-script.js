@@ -1,7 +1,8 @@
 $(() =>{
+    console.log("test")
     let sliderItemCount = $('.slider-item').length
     let perSliderItemWidth = $('.slider-item').width()
-    let totalSliderWidth = sliderItemCount * perSliderItemWidth;
+    let totalSliderWidth = sliderItemCount * perSliderItemWidth
     let ctr = 3
 
     $('.slider-inner').css({
@@ -80,12 +81,6 @@ $(() =>{
                 rightSlideFunction(5 - temp);
             }
         }
-
-        // if(ctr < count){
-        //     rightSlideFunction(count - ctr)
-        // } else if(ctr > count){
-        //     leftSlideFunction(ctr - count)
-        // }
     }
 
     $('#left-arrow').click(()=>{

@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #F9F9F9;
+}
+
+/* MAIN */
+
+.background-picture {
+    background-image: url(../Asset/Background/Venti-Background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.background-image img{
+    position: inherit;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.register-form-container{
+    background-color: rgba(242, 237, 227, 1);
+    border-color: #947044;
+    border-width: 1vw 0vw 1vw 0vw;
+    border-style: double;
+    margin: 8em 0;
+    padding: 2em;
+    width: 50%;
+    font-size: 2.5vw;
+}
+
+.register-form-container h1{
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+#register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0.5em 0;
+    height: 2em;
+}
+
+.form-row input{
+    background-color: rgba(148, 112, 68, 0.35);
+    font-size: 2vw;
+    border-radius: 5px;
+    padding: 1vh 0.5vw;
+    border-color: transparent;
+}
+
+#error-message{
+    height: 1em;
+}
+
+.tnc-row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 0.9em;
+    margin: 0.5em 0;
+}
+
+#tnc-checkbox{
+    height: 2vw;
+    width: 2vw;
+    margin-right: 3vw;
+}
+
+#submit-button{
+    cursor: pointer;
+    width: auto;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background-color: rgba(148, 112, 68, 0.35);
+    color: rgb(148, 112, 68);
+    border: 0px;
+    border-radius: 5px;
+
+}
+
+#error-message{
+    text-align: center;
+    margin: 1em 0;
+    color: darkred;
+}
+
+@media screen and (max-width: 1024px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .register-form-container{
+        width: 70%;
+        font-size: 5vw;
+    }
+
+    .register-form-container h1{
+        font-size: 8vw;
+    }
+
+    .form-row input{
+        font-size: 3.2vw;
+    }
+
+    #tnc-checkbox{
+        width: 2em;
+        height: 2em;
+    }
+}

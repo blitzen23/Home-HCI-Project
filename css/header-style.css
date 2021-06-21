@@ -9,7 +9,7 @@ header{
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
 }
 
@@ -46,7 +46,7 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -81,7 +81,6 @@ nav a:last-child{
 .nav-item-active{
     color: white;
     text-shadow: 0 0 2px white;
-    background-image: linear-gradient(to right, rgba(0 , 0, 0, 0) ,rgba(0, 0, 0, 0.75), , rgba(255, 0, 0, 0));
 }
 
 @media screen and (min-width: 1025px){
@@ -112,8 +111,6 @@ nav a:last-child{
         width: 100vw;
         background-color: rgba(0, 0, 0, 0.9);
     }
-
-
 
     nav a{
         height: auto;

@@ -23,7 +23,6 @@ body{
 }
 
 .first-container{
-    /* margin-bottom: 5%; */
     position: relative;
     display: flex;
     flex-direction: column;
