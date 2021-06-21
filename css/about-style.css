@@ -267,7 +267,6 @@ body{
         margin-bottom: 10vw;
         margin-left: auto;
         margin-right: auto;
-        font-size: 0vw;
         transition: transform 0.5s;
     }
 
@@ -325,7 +324,7 @@ body{
         margin-left: auto;
         margin-right: auto;
         width: auto;
-        font-size: 2.9vw;
+        font-size: 2.5vw;
     }
     
     .detail-description{
@@ -336,7 +335,7 @@ body{
         margin-left: auto;
         margin-right: auto;
         width: auto;
-        font-size: 2.6vw;
+        font-size: 2.2vw;
         padding-left: 1.2vw;
         padding-right: 1.2vw;
     }
