@@ -18,12 +18,12 @@ a{
 
 body{
     width: 100vw;
-    background-color: #F9F9F9;
+    background-color: #F2EDE3;
     position: relative;
 }
 
 .first-container{
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -165,13 +165,20 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5%;
+    padding: 10% 0;
+    border: double #947044;
+    border-width: 5px 0;
 }
 
 .second-container-title{
     text-align: center;
     font-size: 3vw;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
+}
+
+.second-content-container{
+    display: flex;
+    justify-content: center;
 }
 
 .second-container > div{
@@ -184,9 +191,8 @@ body{
 
 .second-content{
     display: flex;
-    width: 49%;
+    justify-content: center;
     height: 100%;
-    position: relative;
     transition: transform 1s;
 }
 
@@ -195,7 +201,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -208,11 +214,17 @@ body{
 
 .second-content > div > div{
     position: absolute;
-    width: auto;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 5;
-    font-size: 7.5vw;
-    color: #262626;
+    font-size:4.5vw;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.75);
+    width: 99%;
+    height: 99%;
+    background-color: rgba(242, 237, 227, 0.5);
+    border: double 10px #947044;
 }
 
 .third-container{
@@ -276,8 +288,12 @@ body{
         align-items: center;
     }
 
+    .second-container-title{
+        font-size: 6vw;
+    }
+
     .second-content:nth-child(1){
-        margin-bottom: 2.5%;
+        margin-bottom: 8%;
     }
 
     .second-container{
@@ -288,11 +304,14 @@ body{
     .second-content{
         width: 90%;
         height: auto;
-        font-size: 5vw;
+    }
+
+    .second-content-container{
+        flex-direction: column;
     }
 
     .second-content > div > div{
-        font-size: 12.5vw;
+        font-size: 10vw;
     }
 
     .register{
