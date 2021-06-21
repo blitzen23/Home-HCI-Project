@@ -23,6 +23,8 @@ body{
 }
 
 .first-container{
+    margin-bottom: 5%;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -122,12 +124,16 @@ body{
 }
 
 .slider-icon-container{
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
     text-align: center;
 }
 
 .slider-icon{
     font-size: 10vw;
     display: inline;
+    color: gray;
 }
 
 #trailer{
@@ -156,11 +162,24 @@ body{
     height: auto;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5%;
+}
+
+.second-container-title{
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 5%;
+}
+
+.second-container > div{
     padding-left: 2.5%;
     padding-right: 2.5%;
-    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .second-content{
