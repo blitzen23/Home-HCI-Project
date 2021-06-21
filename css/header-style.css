@@ -13,6 +13,10 @@ header{
     position: fixed;
 }
 
+.header-items a{
+    width: auto;
+}
+
 .header-logo{
     width: 10vw;
     margin-left: 4vw;
@@ -92,6 +96,10 @@ nav a:last-child{
 }
 
 @media screen and (max-width: 1024px){
+    .header-items{
+        padding: 1vw 0;
+    }
+
     #hamnav-toggle:checked + nav{
         visibility: visible;
         transform: translateY(0%);
