@@ -89,7 +89,7 @@ $(() =>{
 
     }
 
-    var leftSlideIcon = function(count){
+    function leftSlideFunction(count){
         $('.slider-inner').animate({left: + perSliderItemWidth * count}, 1000, function(){
             for(let i = 0; i < count; i++){
                 $('.slider-item:last-child').prependTo('.slider-inner')
