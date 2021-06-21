@@ -8,6 +8,6 @@ Photoshop:
 
 Website:
 - https://stackoverflow.com/questions/1776915/center-an-element-with-absolute-position-and-undefined-width-in-css
-
+- https://www.youtube.com/watch?v=HLUY1nICQRY
 
 - OMEN Gaming Hub's Gallery
