@@ -222,6 +222,10 @@ main{
 }
 
 @media screen and (max-width: 1024px){
+    #background-video{
+        top: -22em;
+    }
+
     #character-description{
         margin-top: 40%;
         flex-direction: column;
@@ -275,7 +279,7 @@ main{
 
     .talent-cell{
         width: 80%;
-        margin: 5vh 0;
+        margin: 7em 0;
     }
 
     .talent-image {
@@ -305,18 +309,18 @@ main{
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .talent-image img{
-        width: 30%;
+@media screen and (max-width: 768px){
+    #background-video{
+        top: -28em;
     }
 
-    #background-video{
-        top: -20em;
+    .talent-cell{
+        margin: 3em 0;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 320px){
     #background-video{
-        top: -18em;
+        top: -31em;
     }
 }
