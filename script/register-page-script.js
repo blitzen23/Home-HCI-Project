@@ -10,7 +10,7 @@ function validateForm(){
 }
 
 function validateEmail(){
-    var emailInput = document.getElementById("emailtxt").value;
+    var emailInput = document.getElementById("emailtxt").value.trim();
     if(!emailInput.length > 0){
         error.innerHTML = "Email must be filled !";
         return false;
@@ -20,7 +20,7 @@ function validateEmail(){
     } else if(!emailInput.endsWith(".com")){
         error.innerHTML = "Email must end with .com !";
         return false;
-    } else if(emailInput.trim().length <= 5){
+    } else if(emailInput.length <= 5){
         error.innerHTML = "Email can't only contain '@' and '.com' !";
         return false;
     }
@@ -28,11 +28,11 @@ function validateEmail(){
 }
 
 function validateUsername(){
-    var usernameInput = document.getElementById("usernametxt").value;
+    var usernameInput = document.getElementById("usernametxt").value.trim();
     if(!usernameInput.length > 0){
         error.innerHTML = "Username must be filled !";
         return false;
-    } else if(usernameInput.trim().length <= 5){
+    } else if(usernameInput.length <= 5){
         error.innerHTML = "Username must be more than 5 characters !";
         return false;
     } else if(!checkAlphaNumeric(usernameInput)){
@@ -46,19 +46,19 @@ function validateUsername(){
 }
 
 function validatePassword(){
-    var passInput = document.getElementById("passwordtxt").value;
-    var confPassInput = document.getElementById("confirm-passwordtxt").value;
+    var passInput = document.getElementById("passwordtxt").value.trim();
+    var confPassInput = document.getElementById("confirm-passwordtxt").value.trim();
 
     if(!passInput.length > 0){
         error.innerHTML = "Password must be filled !";
         return false;
-    } else if(!confPassInput.trim().length > 0){
+    } else if(!confPassInput.length > 0){
         error.innerHTML = "Confirm Password must be filled !";
         return false;
     } else if(passInput != confPassInput){
         error.innerHTML = "Password and Confirm Password doesn't match !";
         return false;
-    } else if(passInput.trim().length < 6){
+    } else if(passInput.length < 6){
         error.innerHTML = "Password must be more than 5 characters !";
         return false;
     } else if(!checkAlphaNumeric(passInput)){
