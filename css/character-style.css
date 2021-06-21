@@ -23,6 +23,7 @@ body{
     display: flex;
     justify-content: center;
     background-color: gray;
+    position: relative;
     z-index: -2;
 }
 
@@ -32,6 +33,7 @@ body{
     justify-content: center;
     align-items: center;
     z-index: 2;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -48,6 +50,7 @@ body{
     height: inherit;
     background-size: contain;
     background-position: 0em 1.5em;
+    height: 100%;
 }
 
 .mondstadt{
@@ -191,6 +194,14 @@ body{
 }
 
 @media screen and (max-width: 768px){
+    .character-page-front{
+        max-height: 75vw;
+    }
+
+    /* .character-title-background{
+        max-height: 75vw;
+    } */
+
     .mondstadt-title-bar{
         flex-direction: column;
         padding: 3vh 0;

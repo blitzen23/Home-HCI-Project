@@ -350,7 +350,6 @@ body{
 }
 
 .register:hover{
-    /* transform: translate(0, -5%); */
     transform: scale(105%);
     color: white;
     box-shadow: 0 0 7px white;

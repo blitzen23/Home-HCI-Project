@@ -3,13 +3,13 @@ $(() =>{
     let sliderItemCount = $('.slider-item').length
     let perSliderItemWidth = $('.slider-item').width()
     let totalSliderWidth = sliderItemCount * perSliderItemWidth
-    let ctr = 3
+    let ctr = 2
 
     $('.slider-inner').css({
         "width": totalSliderWidth,
-        "marginLeft": - 2 * perSliderItemWidth
+        "marginLeft": - perSliderItemWidth
     })
-    $('.slider-icon:nth-child(3)').css({
+    $(`.slider-icon:nth-child(${ctr})`).css({
         "opacity": "75%",
         "color": "white"
     })

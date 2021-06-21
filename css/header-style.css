@@ -100,6 +100,12 @@ nav a:last-child{
         padding: 1vw 0;
     }
 
+    #hamnav-toggle{
+        visibility: visible;
+        width: 10vw;
+        height: 10vw;
+    }
+
     #hamnav-toggle:checked + nav{
         visibility: visible;
         transform: translateY(0%);
