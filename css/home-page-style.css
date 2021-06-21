@@ -162,6 +162,7 @@ body{
 }
 
 .second-container{
+    z-index: 3;
     width: 100vw;
     height: auto;
     position: relative;

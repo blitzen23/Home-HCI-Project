@@ -88,6 +88,7 @@ nav a:last-child{
     .dropdown-nav:hover nav{
         visibility: visible;
         transform: translateY(0%);
+        z-index: 5;
     }
 }
 
@@ -95,6 +96,7 @@ nav a:last-child{
     #hamnav-toggle:checked + nav{
         visibility: visible;
         transform: translateY(0%);
+        z-index: 5;
     }
 
     .header-logo{
