@@ -20,72 +20,23 @@ $(() =>{
             }
             $('.slider-inner').css({left: 0})
         })
-        if (ctr == 1){
-            $('.slider-icon:nth-child(1)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 2){
-            $('.slider-icon:nth-child(2)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 3){
-            $('.slider-icon:nth-child(3)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 4){
-            $('.slider-icon:nth-child(4)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 5){
-            $('.slider-icon:nth-child(5)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
+        
+        $(`.slider-icon:nth-child(${ctr})`).css({
+            "opacity": "100%",
+            "color": "gray"
+        })
+
         
         ctr += count
 
         if (ctr > 5){
             ctr = ctr % 5
         }
-        if (ctr == 1){
-            $('.slider-icon:nth-child(1)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 2){
-            $('.slider-icon:nth-child(2)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 3){
-            $('.slider-icon:nth-child(3)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 4){
-            $('.slider-icon:nth-child(4)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 5){
-            $('.slider-icon:nth-child(5)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
+
+        $(`.slider-icon:nth-child(${ctr})`).css({
+            "opacity": "75%",
+            "color": "white"
+        })
 
     }
 
@@ -96,79 +47,45 @@ $(() =>{
             }
             $('.slider-inner').css({left: 0})
         })
-        if (ctr == 1){
-            $('.slider-icon:nth-child(1)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 2){
-            $('.slider-icon:nth-child(2)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 3){
-            $('.slider-icon:nth-child(3)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 4){
-            $('.slider-icon:nth-child(4)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
-        else if (ctr == 5){
-            $('.slider-icon:nth-child(5)').css({
-                "opacity": "100%",
-                "color": "gray"
-            })
-        }
+
+        $(`.slider-icon:nth-child(${ctr})`).css({
+            "opacity": "100%",
+            "color": "gray"
+        })
+
         ctr -= count
+        
         if (ctr <= 0){
             ctr = 5 + ctr
         }
-        if (ctr == 1){
-            $('.slider-icon:nth-child(1)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 2){
-            $('.slider-icon:nth-child(2)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 3){
-            $('.slider-icon:nth-child(3)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 4){
-            $('.slider-icon:nth-child(4)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
-        else if (ctr == 5){
-            $('.slider-icon:nth-child(5)').css({
-                "opacity": "75%",
-                "color": "white"
-            })
-        }
 
+        $(`.slider-icon:nth-child(${ctr})`).css({
+            "opacity": "75%",
+            "color": "white"
+        })
     }
 
     function iconSlideDirection(count){
-        if(ctr < count){
-            rightSlideFunction(count - ctr)
-        } else if(ctr > count){
-            leftSlideFunction(ctr - count)
+        let tempCtr = count
+        let temp = 0
+        while(tempCtr != ctr){
+            tempCtr = (tempCtr % 5) + 1;
+            temp++;
         }
+
+        if(temp > 0){
+            if(temp <= 2){
+                leftSlideFunction(temp);
+            } else {
+                rightSlideFunction(5 - temp);
+            }
+        }
+
+        // if(ctr < count){
+        //     rightSlideFunction(count - ctr)
+        // } else if(ctr > count){
+        //     leftSlideFunction(ctr - count)
+        // }
     }
 
     $('#left-arrow').click(()=>{
