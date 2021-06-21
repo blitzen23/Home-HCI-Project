@@ -34,7 +34,7 @@ body{
     justify-content: center;
     width: 100vw;
     position: relative;
-    z-index: 5;
+    z-index: 3;
 }
 
 .slider-outer{
@@ -219,7 +219,7 @@ body{
     position: absolute;
     width: auto;
     height: auto;
-    z-index: 5;
+    z-index: 1;
     font-size: 7.5vw;
     background-color: rgba(38, 38, 38, 0.3);
     color: 	#262626;
