@@ -1,14 +1,4 @@
 Home Page:
-Photoshop:
-- https://commons.wikimedia.org/wiki/File:Play_font_awesome.svg
-- https://github.com/FortAwesome/Font-Awesome/issues/13053
-- https://www.clipartmax.com/middle/m2i8N4N4b1A0Z5K9_press-kit-font-awesome-twitter-icon/
-- https://www.pngwing.com/en/free-png-xlcwx
-- https://www.pngwing.com/en/free-png-hurvd
-- https://www.iconninja.com/menu-three-horizontal-parallel-lines-ios-interface-symbol-icon-608288
-- OMEN Gaming Hub's Gallery
-
-Website:
 - https://stackoverflow.com/questions/1776915/center-an-element-with-absolute-position-and-undefined-width-in-css
 - https://www.youtube.com/watch?v=HLUY1nICQRY
 - OMEN Gaming Hub's Gallery

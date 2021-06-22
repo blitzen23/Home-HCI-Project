@@ -1,0 +1,2 @@
+- Genshin Impact's Game Folder (Genshin Impact\Genshin Impact Game\GenshinImpact_Data\StreamingAssets\MiHoYoSDKRes\HttpServerResources\font)
+- https://upload.wikimedia.org/wikipedia/en/thumb/5/5d/Genshin_Impact_logo.svg/1200px-Genshin_Impact_logo.svg.png
