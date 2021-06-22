@@ -198,10 +198,6 @@ body{
         max-height: 75vw;
     }
 
-    /* .character-title-background{
-        max-height: 75vw;
-    } */
-
     .mondstadt-title-bar{
         flex-direction: column;
         padding: 3vh 0;
