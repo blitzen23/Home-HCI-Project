@@ -4,6 +4,11 @@ function validateForm(){
     if(validateEmail() && validateUsername() && validatePassword() && validateCheckbox()){
         alert("Register Success !");
         error.innerHTML = "";
+        document.getElementById("emailtxt").value = "";
+        document.getElementById("usernametxt").value = "";
+        document.getElementById("passwordtxt").value = "";
+        document.getElementById("confirm-passwordtxt").value = "";
+        document.getElementById("tnc-checkbox").checked = false;
     } else {
         return;
     }

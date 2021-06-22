@@ -18,7 +18,7 @@ body{
 /* MAIN */
 
 .background-picture {
-    background-image: url(../Asset/Background/Venti-Background.jpg);
+    background-image: url(../Asset/Register/Venti-Background.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
