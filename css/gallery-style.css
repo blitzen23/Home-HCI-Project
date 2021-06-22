@@ -22,13 +22,13 @@ body{
     background-image: url("../Asset/gallery/top-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 56vw;
+    height: 56vw;
     color: white;
 }
 
 .bg-black{
     background-color: rgba(0, 0, 0, 0.69);
-    min-height: 56vw;
+    height: 56vw;
 }
 
 .gallery-top{
